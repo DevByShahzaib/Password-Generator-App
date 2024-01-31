@@ -13,6 +13,13 @@
 
 ## Screenshots
 
+![Screenshot_1706690764](https://github.com/DevByShahzaib/Password-Generator-App/assets/108393358/0f4e322f-8622-45ed-b8cf-8bd6fdff15d9)
+
+<hr>
+
+![Screenshot_1706690795](https://github.com/DevByShahzaib/Password-Generator-App/assets/108393358/f379a940-7cb3-4224-9406-0901c325d7bd)
+
+
 # Customization
 
 <ul>

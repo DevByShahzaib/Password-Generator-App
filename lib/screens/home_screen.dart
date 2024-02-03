@@ -66,26 +66,47 @@ class _HomeScreenState extends State<HomeScreen> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
+                          textAlign: TextAlign.center,
                           controller: plength,
                           decoration: InputDecoration(
-                              hintText: "Enter length of your Password"),
+                            border: InputBorder.none,
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide: BorderSide(
+                                    color: Color.fromARGB(255, 83, 81, 81))),
+                            hintText: "Enter length of your Password",
+                          ),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
+                          textAlign: TextAlign.center,
                           controller: pdigit,
                           decoration: InputDecoration(
-                              hintText: "How many digits you want in it ?"),
+                            border: InputBorder.none,
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide: BorderSide(
+                                    color: Color.fromARGB(255, 83, 81, 81))),
+                            hintText: "How many digits you want in it ?",
+                          ),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
+                          textAlign: TextAlign.center,
                           controller: pspecial,
                           decoration: InputDecoration(
-                              hintText:
-                                  "How many special charactor do you want in it ?"),
+                            border: InputBorder.none,
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide: BorderSide(
+                                    color: Color.fromARGB(255, 83, 81, 81))),
+                            hintText:
+                                "How many special charactor do you want in it ?",
+                          ),
                         ),
                       ),
                       Row(
@@ -131,14 +152,39 @@ class _HomeScreenState extends State<HomeScreen> {
                                             runSpacing: 20,
                                             spacing: 10,
                                             children: [
-                                              Text(
-                                                "your result is :\n$result",
-                                                style: GoogleFonts.actor(
-                                                    fontSize: 25,
-                                                    fontWeight: FontWeight.bold,
-                                                    textStyle: TextStyle(
-                                                        color:
-                                                            Color(0xff588157))),
+                                              Container(
+                                                width: 300,
+                                                height: 100,
+                                                decoration:
+                                                    BoxDecoration(boxShadow: [
+                                                  BoxShadow(
+                                                      color:
+                                                          const Color.fromARGB(
+                                                              255,
+                                                              137,
+                                                              189,
+                                                              196),
+                                                      offset: Offset(5, 5),
+                                                      blurRadius: 5,
+                                                      spreadRadius: 5)
+                                                ]
+                                                        // color: Colors.pink,
+                                                        ),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      15.0),
+                                                  child: Text(
+                                                    textAlign: TextAlign.center,
+                                                    "your result is :\n$result",
+                                                    style: GoogleFonts.aclonica(
+                                                        fontSize: 25,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        textStyle: TextStyle(
+                                                            color: Color(
+                                                                0xff588157))),
+                                                  ),
+                                                ),
                                               ),
                                             ],
                                           ),
